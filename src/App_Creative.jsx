@@ -6,6 +6,9 @@ import ParticleBackground from './components/ParticleBackground';
 import FloatingGeometry from './components/FloatingGeometry';
 import ThemeToggle from './components/ThemeToggle';
 import './App.css';
+import profileImg from './assets/profile.jpg';
+import dataFlowImg from './assets/data-flow-divider.png';
+
 
 function App() {
   const [activeSection, setActiveSection] = useState('hero');
@@ -164,7 +167,7 @@ function App() {
                 whileHover={{ scale: 1.05, rotate: 5 }}
               >
                 <img 
-                  src="/src/assets/profile.jpg" 
+                  src={profileImg}
                   alt="Y S Puneeth" 
                   className="w-full h-full object-cover"
                 />
@@ -244,7 +247,7 @@ function App() {
       {/* Section Divider */}
       <div className="w-full h-24 flex items-center justify-center">
         <img 
-          src="/src/assets/data-flow-divider.png" 
+          src={dataFlowImg} 
           alt="Data Flow" 
           className="w-full max-w-4xl opacity-60"
         />
