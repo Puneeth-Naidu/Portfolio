@@ -8,6 +8,7 @@ import ThemeToggle from './components/ThemeToggle';
 import './App.css';
 import profileImg from './assets/profile.jpg';
 import dataFlowImg from './assets/data-flow-divider.png';
+import neuralnetwork from './assets/neural-network.png';
 
 
 function App() {
@@ -328,7 +329,7 @@ function App() {
               className="flex justify-center"
             >
               <img 
-                src="/src/assets/neural-network.png" 
+                src={neuralnetwork}
                 alt="Neural Network" 
                 className="w-full max-w-md opacity-80 animate-pulse-glow"
               />
